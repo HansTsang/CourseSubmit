@@ -30,7 +30,7 @@
         <td>{{item.CourseDate}}</td>
         <td>{{item.ClassCode}}</td>
         <td>{{item.ClassPerson}}</td>
-        <td v-for="n in 8" :key="n"></td>
+        <td v-for="index in 8" :key="index"></td>
         <td>{{item.Subject}}</td><td>{{item.CourseLesson}}</td><td>{{item.CoursePrice}}</td><td>{{item.CourseSubtotal}}</td>
         <td colspan="3">
           <el-button type="primary" icon="el-icon-edit" circle></el-button>
