@@ -1,0 +1,67 @@
+html,
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.el-header {
+    padding: 0;
+}
+
+.el-menu {
+    height: 100px;
+    .el-menu-item {
+        float: right;
+        height: 100px;
+        line-height: 100px;
+        font-size: 18px;
+        .logo-img {
+            float: left;
+            height: 60px;
+        }
+    }
+    .el-submenu {
+        float: right;
+        .el-submenu__title {
+            font-size: 18px;
+            height: 100px;
+            line-height: 100px;
+        }
+    }
+}
+
+.cnode-list {
+    .el-table {
+        th .cell {
+            text-align: center !important;
+        }
+    }
+}
+
+.week-table {
+    table {
+        min-width: 1000px;
+        border-collapse: collapse;
+        // border-color: #f2f2f2;
+        border:solid 1px #add9c0;
+        tbody{
+          border:solid 1px #add9c0;
+        }
+        #one {
+            background-color: #FF8C00;
+            height: 50px; // border-inline-end: white;
+            border-color: white;
+        }
+        #two {
+            background-color: #ADD8E6;
+            height: 40px; // border-inline-end: white;
+            border-color: white;
+        }
+        .data-rows {
+            background-color: white;
+            td {
+                padding: 5px;
+            }
+        }
+    }
+}
