@@ -54,6 +54,7 @@
 export default {
   data() {
     return {
+      //移除测试
       WeekList: [
         {
           CourseDate: "2018-07-20",
