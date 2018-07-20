@@ -52,39 +52,39 @@
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
-      //移除测试
+      // 移除测试
       WeekList: [
         {
-          CourseDate: "2018-07-20",
-          ClassCode: "1410",
+          CourseDate: '2018-07-20',
+          ClassCode: '1410',
           ClassPerson: 30,
-          Subject: "英语",
+          Subject: '英语',
           CourseLesson: 2,
           CoursePrice: 200,
           CourseSubtotal: 400
         },
         {
-          CourseDate: "2018-07-20",
-          ClassCode: "1410",
+          CourseDate: '2018-07-20',
+          ClassCode: '1410',
           ClassPerson: 30,
-          Subject: "数学",
+          Subject: '数学',
           CourseLesson: 3,
           CoursePrice: 230,
           CourseSubtotal: 690
         },
         {
-          CourseDate: "2018-07-20",
-          ClassCode: "1410",
+          CourseDate: '2018-07-20',
+          ClassCode: '1410',
           ClassPerson: 30,
-          Subject: "物理",
+          Subject: '物理',
           CourseLesson: 3,
           CoursePrice: 200,
           CourseSubtotal: 600
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
