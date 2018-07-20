@@ -26,12 +26,12 @@
         <td>课时名</td><td>课时数</td><td>课时费</td><td>小计</td>
       </tr>
       <tbody>
-      <tr class="data-rows" v-for="m in 5" :key="m">
-        <td>2018-07-19</td>
-        <td>520107</td>
-        <td>30</td>
+      <tr class="data-rows" v-for="(item,index) in this.WeekList" :key="index">
+        <td>{{item.CourseDate}}</td>
+        <td>{{item.ClassCode}}</td>
+        <td>{{item.ClassPerson}}</td>
         <td v-for="n in 8" :key="n"></td>
-        <td>英语</td><td>2</td><td>200</td><td>400</td>
+        <td>{{item.Subject}}</td><td>{{item.CourseLesson}}</td><td>{{item.CoursePrice}}</td><td>{{item.CourseSubtotal}}</td>
         <td colspan="3">
           <el-button type="primary" icon="el-icon-edit" circle></el-button>
           <el-button type="info" icon="el-icon-message" circle></el-button>
@@ -52,8 +52,38 @@
 </template>
 <script>
 export default {
-  data () {
-    return {}
+  data() {
+    return {
+      WeekList: [
+        {
+          CourseDate: "2018-07-20",
+          ClassCode: "1410",
+          ClassPerson: 30,
+          Subject: "英语",
+          CourseLesson: 2,
+          CoursePrice: 200,
+          CourseSubtotal: 400
+        },
+        {
+          CourseDate: "2018-07-20",
+          ClassCode: "1410",
+          ClassPerson: 30,
+          Subject: "数学",
+          CourseLesson: 3,
+          CoursePrice: 230,
+          CourseSubtotal: 690
+        },
+        {
+          CourseDate: "2018-07-20",
+          ClassCode: "1410",
+          ClassPerson: 30,
+          Subject: "物理",
+          CourseLesson: 3,
+          CoursePrice: 200,
+          CourseSubtotal: 600
+        }
+      ]
+    };
   }
-}
+};
 </script>
