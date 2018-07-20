@@ -6,6 +6,7 @@ body {
 
 .el-header {
     padding: 0;
+    min-width: 1000px;
 }
 
 .el-menu {
@@ -41,27 +42,36 @@ body {
 .week-table {
     table {
         min-width: 1000px;
-        border-collapse: collapse;
-        // border-color: #f2f2f2;
-        border:solid 1px #add9c0;
-        tbody{
-          border:solid 1px #add9c0;
+        border-collapse: collapse; // border-color: #f2f2f2;
+        border: solid 1px #add9c0;
+        thead{
+          font-weight: lighter;
         }
-        #one {
-            background-color: #FF8C00;
-            height: 50px; // border-inline-end: white;
-            border-color: white;
-        }
-        #two {
-            background-color: #ADD8E6;
-            height: 40px; // border-inline-end: white;
-            border-color: white;
-        }
-        .data-rows {
+        tbody {
+            border: solid 1px #add9c0;
             background-color: white;
             td {
                 padding: 5px;
             }
+            .total {
+                font-weight: bold;
+            }
+            tr:hover{
+              background-color: #f2f2f2;
+            }
         }
+        #one {
+            background-color: #FF8C00;
+            height: 50px;
+            border-color: white;
+        }
+        #two {
+            background-color: #ADD8E6;
+            height: 40px;
+            border-color: white;
+        }
+    }
+    .page {
+        margin: 10px;
     }
 }
